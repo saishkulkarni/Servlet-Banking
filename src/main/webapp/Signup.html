@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Signup</title>
+</head>
+<body>
+<h1>Enter Customer Details</h1><br>
+<form action="signup" method="post" enctype="multipart/form-data">
+Name:<input type="text" name="name" placeholder="Enter Name"><br>
+Mobile:<input type="tel" name="mobile" pattern="[0-9]{10}" placeholder="Enter Mobile Number" required="required"><br>
+Email: <input type="email" name="email"><br>
+Gender:
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<br>
+Password:<input type="password" name="password" placeholder="Create a Password"><br>
+Date of Birth:<input type="date" name="dob" required="required"><br>
+Address:<textarea rows="5" cols="25" name="address"></textarea><br>
+Upload Pan:<input type="file" name="proof"><br>
+<button type="reset">Cancel</button><button>Signup</button>
+</form>
+<br>
+<a href="Home.html"><button>Home</button></a>
+</body>
+</html>
